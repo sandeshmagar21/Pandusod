@@ -95,6 +95,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 </div>
 {% endblock %}
 
+
 <div>
     {% if messages %}
     <ul class="alert alert-primary">
@@ -108,31 +109,30 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 
 <div style="color:blue">
   {% if sac %}
-     {% for k in sac %}
-<centre>
+     {% for S in sac %}
+ <centre>
      <table border="8px" width="300px" class=" table table-dark table-borderless">
        <tr>
           <td>Workout Name</td>
-          <td>{{ k.workoutname }}</td>
+          <td>{{ S.workoutname }}</td>
        </tr> 
        <tr>
         <td>Image</td>
-        <td>{{ k.picture }}</td>
+        <td>{{ S.picture }}</td>
        </tr>  
        <tr>
         <td>Email</td>
-        <td>{{ k.email }}</td>
+        <td>{{ S.email }}</td>
        </tr>  
        <td> Workout Description </td>
-        <td>{{ k.workoutdesc }}</td>
+        <td>{{ S.workoutdesc }}</td>
        </tr>  
      </table> 
      <hr>
   {% endfor %}
   {% endif %}
-    </centre>
-</div>
-
+ </centre>
+ </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

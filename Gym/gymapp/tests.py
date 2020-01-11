@@ -5,6 +5,7 @@ from django.urls import reverse, resolve
 
 
 # Create your tests here.
+
 class ModelTestCase(TestCase):
     def test_uploadata_fields_blank(self):
         WO =Gym.objects.create(workoutname="muscles")
